@@ -1,15 +1,20 @@
 criaCartao(
-    'Programação',
-    'O que python',
-    ' O python é uma linguagem de programação'
+    'Tecnologia',
+    'Quando foi criado o Bluetooth?',
+    ' Em 1994.'
 )
 criaCartao(
     'Geografia',
-    ' Qualé a capital da França',
-    ' a capital da França é Paris'
+    ' Quais países são Eurásia?',
+    'Rússia e Turquia.'
 )
 criaCartao(
-    'Programação',
-    'Qual é a função',
-    'Uma função é um bloco de código que executa alguma tarefa'
+    'Turco',
+    'Como se fala Prazer em conhece-lo(a)?',
+    'Memnun oldum.'
+)
+criaCartao(
+    'Física',
+    'Qual é a velocidade da luz?',
+    '299 792 458 metros por segundo (m/s).'
 )
