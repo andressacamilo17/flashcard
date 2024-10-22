@@ -1,5 +1,4 @@
-function criaCartao(categoria,pergunta,resposta) 
-{
+function criaCartao(categoria,pergunta,resposta) {
     let container = document.getElementById('container')
     let cartao = document.createElement('article')
     cartao.className = 'cartao'
@@ -8,13 +7,24 @@ function criaCartao(categoria,pergunta,resposta)
 
     cartao.innerHTML = `
     <div class="cartao__conteudo">
-    <h3 class="programacao">Geografia</h3>
+    <h3>${categoria}</h3>
     <div class="cartao__conteudo__pergunta">
-       <p> Quais países são Eurásia?</p>
+       <p>${pergunta}</p>
     </div>
     <div class="cartao__conteudo__resposta">
-       <p> Rússia e Turquia.</p> 
+       <p>${resposta}</p> 
     </div>
-    </div>`
+    </div>
+    `
+
+    let respostaEstaVisivel= false
+
+    function viraCartao(){
+      respostaEstaVisisvel=!respostaEstaVisivel
+
+    cartao.classListtoggle('active',resposta)
+   }
+cartao.addEventListener('click',viraCartao)
+
     container.appendChild(cartao)
 }
